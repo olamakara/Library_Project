@@ -1,10 +1,17 @@
-# Galernicy - Czytelnia - środa 9.40
+# Galernicy - Czytelnia
 ## Skład grupy
 - [x] **Aleksandra Makara**
 - [x] **Izabella Rosikoń**
 - [x] **Radosław Niżnik**
 - [x] **Piotr Śliperski**
 
+## Przykładowe widoki
+### Ekran startowy
+![Zrzut ekranu 2024-03-19 211251](https://github.com/olamakara/Library_Project/assets/101846943/054d1cb0-03ca-495f-974c-480f69de3fec)
+### Panel wypożyczeń pracownika
+![Zrzut ekranu 2024-03-19 211337](https://github.com/olamakara/Library_Project/assets/101846943/362a5e2d-1755-4610-be63-fbfdebe84b72)
+### Lista dostępnych książek
+![Zrzut ekranu 2024-03-19 211453](https://github.com/olamakara/Library_Project/assets/101846943/f2853488-5522-4cb9-a937-c09b719c6b2b)
 
 ## Szkielet aplikacji
 
