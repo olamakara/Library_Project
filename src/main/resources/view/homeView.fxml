@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/Home.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.HomeController"
+            minHeight="550.0" minWidth="850.0">
+
+    <center>
+
+            <!-- Create 3 button groups one for admin, one for employee and one for user -->
+        <!-- Each group should contain buttons that redirect to proper page -->
+        <HBox fx:id="controlButtons" spacing="10" alignment="CENTER">
+            <VBox fx:id="adminButtons" spacing="10" alignment="CENTER" visible="false">
+                <Label text="Panel administratora" />
+                <Button text="Dodaj książkę" onAction="#addBook"/>
+                <Button text="Dodaj użytkownika" onAction="#addUser"/>
+            </VBox>
+
+            <VBox fx:id="employeeButtons" spacing="10" alignment="CENTER" visible="false">
+                <Label text="Panel pracownika" />
+                <Button text="Dodaj książkę" onAction="#addBook"/>
+                <Button text="Lista książek" onAction="#bookList"/>
+                <Button text="Lista wypożyczeń" onAction="#loansList"/>
+                <Button text="Wypożyczenia ostatnie 6 mies." onAction="#loansListLastSixMonths"/>
+            </VBox>
+
+            <VBox fx:id="userButtons" spacing="10" alignment="CENTER">
+                <Label text="Panel użytkownika" />
+                <Button text="Zobacz moje wypożyczenia" onAction="#userLoansList" />
+                <Button text="Dostępne książki" onAction="#availableBooksList" />
+                <Button text="Polecane dla ciebie" onAction="#recommendedBooksList" />
+            </VBox>
+        </HBox>
+
+    </center>
+</BorderPane>
+

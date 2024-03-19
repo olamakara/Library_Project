@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="/css/addUser.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.jksr0940galernicy.controller.LoansSixMonthsController">
+   <center>
+      <LineChart fx:id="loansChart" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" label="Miesiące"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" label="liczba wypożyczeń"/>
+        </yAxis>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </LineChart>
+   </center>
+</BorderPane>

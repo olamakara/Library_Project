@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/addUser.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.UserRecommendationsController"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Recommendations" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="recommendedBooksListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+
+</BorderPane>

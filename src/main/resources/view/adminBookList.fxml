@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane minHeight="550.0" minWidth="850.0" stylesheets="/css/addUser.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.jksr0940galernicy.controller.AdminBookListController">
+
+
+
+    <center>
+        <BorderPane>
+            <top>
+                <VBox>
+                    <children>
+                        <HBox>
+                            <children>
+                                <Text styleClass="title" text="Filtrowanie    " />
+                                <Label styleClass="title" text="Tytuł:" />
+                                <TextField fx:id="titleFilter" promptText="Tytuł" />
+                                <ComboBox fx:id="authorFilter" promptText="Autor" />
+                                <ComboBox fx:id="categoryFilter" promptText="Kategoria" />
+                                <Button fx:id="filterButton" onAction="#filter" text="Filtruj" />
+                                <Button fx:id="clearFilterButton" onAction="#clearFilter" text="Wyczyść" />
+
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Text styleClass="title" text="Sortowanie    " />
+                                <Label styleClass="title" text="Sortuj według:" />
+                                <ComboBox fx:id="sortType" promptText="Sortuj według" />
+                            </children>
+                        </HBox>
+
+                    </children>
+                </VBox>
+
+            </top>
+            <center>
+                <BorderPane>
+                    <center>
+                        <GridPane fx:id="mainGrid" prefHeight="456.0" prefWidth="677.0" BorderPane.alignment="CENTER" GridPane.columnSpan="2">
+                     <BorderPane.margin>
+                        <Insets left="120.0" right="120.0" />
+                     </BorderPane.margin></GridPane>
+                    </center>
+
+                </BorderPane>
+            </center>
+            <bottom>
+                <Pagination fx:id="pagination"/>
+            </bottom>
+        </BorderPane>
+
+
+    </center>
+</BorderPane>

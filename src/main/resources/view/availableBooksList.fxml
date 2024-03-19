@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/addUser.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.AvailableBooksListController"
+            prefHeight="550.0" prefWidth="850.0">
+
+
+    <center>
+        <BorderPane>
+            <top>
+                <VBox>
+                    <children>
+                        <HBox>
+                            <children>
+                                <Text text="Filtrowanie    " styleClass="title"/>
+                                <Label text="Tytuł:" styleClass="title"/>
+                                <TextField fx:id="titleFilter" promptText="Tytuł"/>
+                                <ComboBox fx:id="authorFilter" promptText="Autor"/>
+                                <ComboBox fx:id="categoryFilter" promptText="Kategoria"/>
+                                <Button fx:id="filterButton" text="Filtruj" onAction="#filter"/>
+                                <Button fx:id="clearFilterButton" text="Wyczyść" onAction="#clearFilter"/>
+
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Text text="Sortowanie    " styleClass="title"/>
+                                <Label text="Sortuj według:" styleClass="title"/>
+                                <ComboBox fx:id="sortType" promptText="Sortuj według"/>
+                            </children>
+                        </HBox>
+                    </children>
+                    <Label fx:id="topAvailableBooksListLabel" prefHeight="10.0" styleClass="top-text" text="Lista dostępnych książek" prefWidth="Infinity" alignment="CENTER"/>
+                </VBox>
+            </top>
+            <center>
+                <BorderPane>
+                    <center>
+                        <GridPane fx:id="mainGrid" prefHeight="456.0" prefWidth="677.0" BorderPane.alignment="CENTER" GridPane.columnSpan="2">
+                            <BorderPane.margin>
+                                <Insets left="120.0" right="120.0" />
+                            </BorderPane.margin></GridPane>
+                    </center>
+
+                </BorderPane>
+            </center>
+            <bottom>
+                <Pagination fx:id="pagination"/>
+            </bottom>
+        </BorderPane>
+    </center>
+
+</BorderPane>

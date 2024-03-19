@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/addUser.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.NotificationsViewController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <Label fx:id="topNotificationsLabel" prefHeight="10.0" styleClass="top-text" text="Powiadomienia" prefWidth="Infinity" alignment="CENTER"/>
+        <ListView fx:id="notificationsListView" prefWidth="300.0" prefHeight="200.0"/>
+    </center>
+
+</BorderPane>

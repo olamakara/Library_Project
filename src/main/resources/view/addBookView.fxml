@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/addBook.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.AddBookController"
+            minHeight="550.0" minWidth="850.0">
+
+<!--    <top>-->
+<!--        <Label styleClass="top-text" text="Dodaj książkę" prefWidth="Infinity" alignment="CENTER"/>-->
+<!--    </top>-->
+
+    <center>
+        <GridPane maxHeight="200" maxWidth="340">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+            </rowConstraints>
+
+            <Label text="Tytuł" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label text="Autor" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label text="Okładka" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label  text="Opis" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label  text="Kategoria" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+
+            <TextField fx:id="titleField" GridPane.rowIndex="0" GridPane.columnIndex="1"
+                       promptText="Wprowadź tytuł"/>
+            <TextField fx:id="authorField" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                       promptText="Wprowadź autora"/>
+            <TextField fx:id="coverImageField" GridPane.rowIndex="2" GridPane.columnIndex="1"
+                          promptText="Wprowadź okładkę"/>
+            <TextField fx:id="contentsField" GridPane.rowIndex="3" GridPane.columnIndex="1"
+                          promptText="Wprowadź opis"/>
+            <ComboBox fx:id="categoryBox" GridPane.rowIndex="4" GridPane.columnIndex="1"
+                      promptText="Wybierz kategorię">
+            </ComboBox>
+            <Label fx:id="errorLabel" textFill="red" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"
+                   GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+
+            <Button text="Dodaj książkę" GridPane.rowIndex="6" GridPane.columnIndex="0"
+                    GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" onAction="#handleAddBook"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/css/addUser.css"
+            fx:controller="pl.edu.agh.jksr0940galernicy.controller.AddUserController"
+            minHeight="550.0" minWidth="850.0">
+<!--    <top>-->
+<!--        <Label styleClass="top-text" text="Dodaj użytkownika" prefWidth="Infinity" alignment="CENTER"/>-->
+<!--    </top>-->
+    <center>
+        <GridPane maxHeight="200" maxWidth="340">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+                <RowConstraints vgrow="ALWAYS"/>
+            </rowConstraints>
+
+            <Label text="Imię" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label text="Nazwisko" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+            <Label text="Email" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.valignment="CENTER"/>
+
+            <TextField fx:id="firstNameField" GridPane.rowIndex="0" GridPane.columnIndex="1"
+                       promptText="Wprowadź imię"/>
+            <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                       promptText="Wprowadź nazwisko"/>
+            <TextField fx:id="emailField" GridPane.rowIndex="2" GridPane.columnIndex="1"
+                       promptText="Wprowadź email"/>
+            <ComboBox fx:id="roleComboBox" GridPane.rowIndex="3" GridPane.columnIndex="1"
+                      promptText="Wybierz rolę">
+            </ComboBox>
+            <Label fx:id="errorLabel" textFill="red" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"
+                   GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+
+            <Button text="Dodaj użytkownika" GridPane.rowIndex="5" GridPane.columnIndex="0"
+                    GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" onAction="#handleAddUser"/>
+        </GridPane>
+    </center>
+</BorderPane>
+

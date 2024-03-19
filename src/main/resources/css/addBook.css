@@ -1,0 +1,43 @@
+.top-text {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-margin-bottom: 20px;
+    -fx-margin-top: 20px;
+}
+
+GridPane {
+    -fx-padding: 20px;
+    -fx-padding-botton: 10px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+Label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-margin-bottom: 10px;
+}
+
+TextField {
+    -fx-font-size: 15px;
+    -fx-margin-bottom: 20px;
+}
+
+Button {
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-margin-top: 30px;
+    -fx-alignment: center;
+}
+
+Button:hover {
+    -fx-background-color: #0866ff;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-margin-top: 30px;
+    -fx-alignment: center;
+    -fx-margin-bottom: 20px;
+}
